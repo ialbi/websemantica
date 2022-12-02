@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Arizonia&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+html {
+  background: #26282a url(../imagenes/fondo2.png) repeat center 0;
+  background-color: pink;
+  height: 100%;
+}
+
+body {
+  font-family: 'Muli', sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 400;
+  line-height: 1.58;
+  letter-spacing: -.003em;
+  font-size: 20px;
+  padding: 70px;
+}
+
+.item {
+  width: 20%;
+  background: pink;
+  min-height: 3rem;
+  border: solid 2px palevioletred;
+  border-radius: .5rem;
+  align-content: center;
+  margin: 5px;
+  text-align: center;
+  font-size: 2rem;
+  color: black;
+  font-weight: bold;
+}
+
+.container :hover {
+  cursor: pointer;
+  background: lightgray;
+  border-color: pink;
+}
+
+/* quitamos el subrayado y los colores por defecto de los enlances */
+
+a:link {
+  text-decoration: none;
+  color: #000000
+}
+
+a:visited {
+  text-decoration: none;
+  color: #000000;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #000000;
+}
+
+a:active {
+  text-decoration: none;
+  color: #000000;
+}
+
+.imagen {
+display: block;
+margin-left: auto;
+margin-right: auto;
+border:#000000;
+filter: grayscale(100%);
+}
+
+
+header {
+  width: 65%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  border: solid 2px;
+  border-radius: .5rem;
+  margin-bottom: 1em;
+  background: pink;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.container {
+  margin: auto;
+  width: 55%;
+  border: solid 2px;
+  border-radius: .5rem;
+  margin-bottom: 1em;
+  background: whitesmoke;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+}
+
+article {
+  margin: auto;
+  padding: auto;
+  width: 55%;
+  border: solid 2px;
+  border-radius: .5rem;
+  margin-bottom: 1em;
+  background: whitesmoke;
+}
+
+article p {
+  margin: 0.7rem;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Arizonia', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 100px;
+  line-height: 1.15;
+  letter-spacing: -.02em;
+  color: rgba(0, 0, 0, 0.8);
+  -webkit-font-smoothing: antialiased;
+}
+
+footer {
+  font-family: 'Muli', sans-serif;
+  font-size: 1.8rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-self: flex-end;
+  color: #000000;
+  line-height: 1rem;
+}
+
+/* inversion del copyright */
+.copy-left {
+  display: inline-block;
+  text-align: right;
+  margin: 0px;
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -mns-filter: "FlipH";
+}
